@@ -1,0 +1,376 @@
+/* montserrat raleway roboto 폰트*/
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Hind+Siliguri:wght@300;400;500;600;700&family=Hind:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/* Noto Sans KR 폰트 */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+
+/* 모든폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Hind+Siliguri:wght@300;400;500;600;700&family=Hind:wght@300;400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Monoton&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* XEION CDN */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+/* Bootstrap Icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+/* Lato 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* Playfair 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* Open Sans 폰트*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* 눈누 폰트 지마켓 */
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Default CSS */
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 500;
+    margin: 0;
+}
+
+/* Common CSS */
+.btn-download{
+    background-color: dodgerblue;
+    color: #fff;
+    display: inline-block;
+    width: 180px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 2px;
+    &:hover{
+        background-color: #174EA6;
+    }
+}
+
+.container{
+    
+    header{
+        // border: 1px solid #000;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        height: 65px;
+        position: fixed;
+        background-color: #fff;
+        z-index: 100;
+        width: 100%;
+        .logo{
+            float: left;
+            margin-left: 15px;
+            padding-top: 15px;
+            a{
+
+                img{
+
+                }
+            }
+        }
+        .download{
+            float: right;
+            // border: 1px solid #000;
+            padding-top: 10px;
+            transition: 0.5s;
+            transform: translateX(200px);
+            &.active{
+                transform: translateX(-20px);
+            }
+        }
+    }
+    .welcome{
+        background: #f8f9f8 url(./image/hero-back-large-desktop.jpg) center center no-repeat;
+        height: 100vh;
+        .heading{
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            // border: 1px solid #000;
+            text-align: center;
+            
+            img{
+                width: 100px;
+            }
+            h1{
+                font-size: 50px;
+                font-weight: 600;
+                color: #000000be;
+                // border: 1px solid #000;
+                width: 600px;
+                line-height: 1.5em;
+            }
+            p{
+
+            }
+            .download-content{
+                text-align: center;
+                // border: 1px solid #000;
+                .btn-download{
+
+                }
+                span{
+                    // margin-top: 10px;
+                    // border: 1px solid #000;
+                    display: block;
+                    font-size: 12.5px;
+                }
+            }
+            .static{
+                font-size: 12.5px;
+                p{
+
+                    label{
+
+                        input[type=checkbox]{
+                            transform: translateY(2px);
+                        }
+                        a{
+                            color: #1E90FF;
+                        }
+                    }
+                }
+                a{
+                    color: #1E90FF;
+                }
+            }
+        }
+        .next-section{
+            // border: 1px solid #000;
+            background-color: #fff;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 50px;
+            left: 48%;
+            transform: translateX(-50%);
+            width: 60px; height: 60px;
+            animation: scale 1s infinite linear;
+            a{
+                line-height: 60px;
+                font-size: 46px;
+                // border: 1px solid #333;
+                i{
+
+                }
+            }
+        }
+    }
+    .feature{
+        width: 1200px;
+        margin: auto;
+        // border: 1px solid #000;
+        overflow: hidden;
+        .inner{
+            height: 90vh;
+            // border: 1px solid #000;
+            padding-top: 50px;
+            // margin-top: 50px;
+            .desc,
+            .photo{
+                width: 50%;
+                float: left;
+                padding-top: 100px;
+            }
+            .desc{
+                // border: 1px solid #000;
+                height: 500px;
+                padding: 30px;
+                padding-top: 200px;
+                margin-top: 10px;
+                // margin-left: 10px;
+                img{
+
+                }
+                h1{
+                    font-size: 42px;
+                    width: 520px;
+                    font-weight: 400;
+                    line-height: 48px;
+                }
+                p{
+                    line-height: 25px;
+                    width: 520px;
+                    // border: 1px solid #000;
+                }
+                .read-more{
+                    position: relative;
+                    color: purple;
+                    &::after{
+                        content: "\e907";
+                        position: absolute;
+                        top: 3px;
+                        margin-left: 5px;
+                        font-family: 'xeicon';
+                    }
+                }
+            }
+            .photo{
+                float: left;
+                img{
+
+                }
+            }
+        }
+        &.smart,
+        &.edit{
+            .desc{
+                padding-left: 50px;
+            }
+        }
+    }
+    .callaction{
+        // border: 1px solid #000;
+        height: 30vh;
+        background: #1E90FF url(./image/download-bg-desktop.svg) center center no-repeat;
+        .inner{
+            text-align: center;
+            color: #fff;
+            h1{
+                font-size: 36px;
+                padding-top: 100px;
+                // line-height: 30vh;
+                padding-bottom: 30px;
+            }
+            .btn-download{
+                border: 1px solid #fff;
+            }
+        }
+    }
+    footer{
+        // border: 1px solid #000;
+        .footer-inner{
+            // border: 1px solid #000;
+            width: 1280px;
+            margin: auto;
+            .sns-outer{
+                border-bottom: 1px solid #eee;
+                .sns{
+                    font-size: 20px;
+                    padding: 28px 0;
+                    b{
+                        font-weight: 600;
+                    }
+                    span{
+                        // border: 1px solid #000;
+                        margin-left: 7px;
+                        a{
+                            font-size: 24px;
+                            i{
+
+                            }
+                        }
+                    }
+                }
+            }
+            .site-map{
+                // border: 1px solid #000;
+                .link-items{
+                    // border: 1px solid #000;
+                    border-bottom: 1px solid #eee;
+                    padding-bottom: 20px;
+                    display: flex;
+                    // text-align: center;
+                    .link-item{
+                        // display: inline-block;
+                        // width: 250px;
+                        // border: 1px solid #000;
+                        flex: 1;
+                        .link-item-title{
+                            font-size: 18px;
+                            // text-align: left;
+                            padding-top: 20px;
+                        }
+                        .link-item-content{
+                            // text-align: left;
+                            // border: 1px solid #000;
+                            margin: 15px 0;
+                            a{
+                                display: block;
+                                font-size: 13px;
+                                margin-top: 15px;
+                                &:hover{
+                                    color: dodgerblue;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .copyright{
+            width: 1280px;
+            margin: auto;
+            padding-top: 35px;
+            padding-bottom: 25px;
+            position: relative;
+            .logo-footer{
+                display: inline-block;
+                img{
+
+                }
+            }
+            .policy{
+                display: inline-block;
+                // border: 1px solid #000;
+                vertical-align: middle;
+                transform: translateY(-10px);
+                margin-left: 10px;
+                a{
+
+                    &::after{
+                        content: '|';
+                        margin: 0 10px;
+                        font-size: 14px;
+                        color: #808080;
+                    }
+                    &:last-child::after{
+                        display: none;
+                    }
+                }
+            }
+            .language{
+                position: absolute;
+                display: inline-block;
+                right: 0;
+                top: 45%;
+            }
+        }
+    }
+}
+
+@keyframes scale {
+    0%, 100%{
+        transform: translateY(3px);
+    }
+    50%{
+        transform: translateY(0);
+
+    }
+}
